@@ -5,6 +5,7 @@
 **全本地运行，不联网。** 语音识别在你的 CPU 上跑，文字润色走本机 Ollama，没有任何数据出机器。
 
 > 定位：一个能自己掌控的语音输入工具。不用注册、不用订阅、不用担心你对着麦克风说的话被传到哪去。
+<img width="367" height="91" alt="image" src="https://github.com/user-attachments/assets/0cd7274e-0e1e-4ded-8f6b-fde7b7dd7c13" />
 
 ---
 
