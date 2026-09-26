@@ -1,0 +1,36 @@
+# ---- 隐私 / 本地数据（绝不能提交）----
+# 注意：.gitignore 不支持行内注释！注释必须独占一行，
+# 否则 "#" 之后的内容会被当成文件名的一部分，规则静默失效。
+typeless.log
+hotkey.json
+*.wav
+*.flac
+*.raw
+run_out.txt
+
+# ---- 大文件（走 README 里的下载说明，不进仓库）----
+models/
+*.tar.bz2
+*.onnx
+*.exe
+*.msi
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
