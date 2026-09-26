@@ -1,0 +1,19 @@
+# 统一换行符，避免跨平台 checkout 时互相污染。
+# 不加这个文件的话，Windows 上提交的 .bat 到 Linux/Mac 会被转成 LF
+# 再回来变成 CRLF，产生整文件 diff 噪音。
+
+# 源码和文本：仓库里一律存 LF，checkout 到 Windows 时转 CRLF
+* text=auto eol=lf
+*.py   text eol=lf
+*.md   text eol=lf
+*.txt  text eol=lf
+
+# Windows 批处理必须是 CRLF，否则某些 cmd 解析会出问题
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+
+# 二进制：不要动
+*.png  binary
+*.jpg  binary
+*.ico  binary
+*.onnx binary
